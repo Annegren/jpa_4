@@ -1,0 +1,33 @@
+{# templates/product/show.html.twig #}
+{% extends 'base.html.twig' %}
+{% block title %}Voyages #{{ product.id }}{% endblock %}
+
+{% block body %}
+
+<section class="container p-5 col-5">
+<div class="card" style="width: 30rem;">
+  <img src="{{product.poster}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{  product.title }}</h5>
+    <p class="card-text">{{ product.description }}</p>
+    <a href="#" class="btn btn-secondary">J'achète !</a>
+  </div>
+</div>
+</section>
+
+
+<a href="{{ path('category_index') }}">
+    Retour 
+</a>
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+

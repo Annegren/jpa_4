@@ -1,0 +1,74 @@
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    background-color:white;
+}
+
+a {
+    text-decoration: none ;
+    color:rgba(100, 79, 52, 0.514);
+}
+
+    h2, h3, h4, h5 {
+    font-family: Arial,Helvetica,sans-serif;
+    color: rgba(100, 79, 52, 0.514);
+    line-height: 1.25;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none
+}
+
+    h1 {
+    font-family: Arial,Helvetica,sans-serif;
+    color:white;
+    line-height: 1.25;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-decoration: none
+
+}
+
+    p{
+        color:rgba(100, 79, 52, 0.514);
+        font-weight: 700;
+
+
+
+    }
+
+    #conceptIMG {
+    background-image: url(https://zupimages.net/up/21/29/gxuo.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 400px;
+    
+
+    }
+
+    
+
+    .nav-link{
+    text-decoration: none
+    }
+
+    #accueilIMG{
+    background-image: url(https://zupimages.net/up/21/29/6ho1.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: auto;
+    height: 800px;
+    
+
+    }
+
+   
+   
+   
+   
+
+    
+    
+ 
+    
+

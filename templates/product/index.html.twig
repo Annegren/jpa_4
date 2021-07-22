@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} All products {% endblock %}
+
+{% block body %}
+
+    <h1>Toues les voyages de la table product : <h1>
+    {% for product in products %}
+        <div>
+        <h2>{{ loop.index }} / {{ product.title }} - Catégorie : {{ product.category.name }}</h2>
+            <p>{{ product.description }}</p>
+            <a href="{{ path("product_show", { id: product.id }) }}">Voir la fiche</a>
+        </div>
+    {% else %}
+        Aucun voyage trouvé.
+    {% endfor %}
+
+    <a href="{{ path('app_index') }}">
+        Retour à l'accueil
+    </a>
+
+{% endblock %}
+
