@@ -3,10 +3,14 @@
 {% block title %}All categories{% endblock %}
 
 {% block body %}
-    <div class="mb-5 mt-5 text-center">
 
-    <h1>  Je pars avec:</h1> </br>
     </div>
+    <div id="categoryIMG">
+
+    <h1 class="text-center p-5" > Qui ? </h1>
+
+    </div>
+
     {% for category in categories %}
     <section class="mb-3 text-center">
         <div>
@@ -17,7 +21,7 @@
         Aucune Catégorie trouvée.
     {% endfor %}
 
-    <a href="{{ path('app_index') }}">
-        Retour à l'accueil
-    </a>
+    
+    
+    
 {% endblock %}

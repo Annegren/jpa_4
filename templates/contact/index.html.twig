@@ -1,20 +1,74 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello ContactController!{% endblock %}
+{% block title %}Hello ContactController!
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+	<style>
+		.example-wrapper {
+			margin: 1em auto;
+			max-width: 800px;
+			width: 95%;
+			font: 18px / 1.5 sans-serif;
+		}
+		.example-wrapper code {
+			background: #F5F5F5;
+			padding: 2px 6px;
+		}
+	</style>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+	
+		<div id="contactIMG">
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ '/Users/annegreen/Desktop/chpnt4/jpa/src/Controller/ContactController.php'|file_link(0) }}">src/Controller/ContactController.php</a></code></li>
-        <li>Your template at <code><a href="{{ '/Users/annegreen/Desktop/chpnt4/jpa/templates/contact/index.html.twig'|file_link(0) }}">templates/contact/index.html.twig</a></code></li>
-    </ul>
+			<h1 class="text-center p-5">Contactez-nous </h1>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            </br>
+            <h1 class="text-center p-5">Une question ?</h1>
+
+
+		</div>
+
+        <div class="example-wrapper">
+		<form>
+			<div class="mb-3">
+				<label for="exampleInputEmail1" class="form-label">Email
+				</label>
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+			</div>
+			<div class="mb-3">
+				<label for="exampleInputPassword1" class="form-label">Message</label>
+				<input type="text" class="form-control" id="exampleInputPassword1">
+			</div>
+			<div class="mb-3 form-check">
+			</div>
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
+Envoyer</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Merci!</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Nous revenons vers vous au plus vite !
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
 </div>
+</form>
+	</div>
 {% endblock %}

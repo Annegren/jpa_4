@@ -9,13 +9,42 @@
 
     <h1>Register</h1>
 
-    {{ form_start(registrationForm) }}
-        {{ form_row(registrationForm.email) }}
-        {{ form_row(registrationForm.plainPassword, {
-            label: 'Password'
-        }) }}
-        {{ form_row(registrationForm.agreeTerms) }}
+	<!--================ Banner start =================-->
+<section class="hero-banner hero-banner--sm mb-30px form">
+	<div class="container">
+		<div class="text-center">
+			<div class="hero-banner--sm__content">
+				<h2>S'inscrire</h2>
+            </div>
+		</div>
+	</div>
+</section>
+	<!--================ Banner end =================-->
 
-        <button type="submit" class="btn">Register</button>
-    {{ form_end(registrationForm) }}
+	 <!--================ Register start =================-->
+<div class="container text-center mt-5">
+	{% for flashError in app.flashes('verify_email_error') %}
+		<div class="alert alert-danger" role="alert">{{ flashError }}</div>
+	{% endfor %}
+
+ {{ form_start(registrationForm) }}
+     {{ form_row(registrationForm.email) }}
+      </br>
+     {{ form_row(registrationForm.plainPassword, {
+         label: 'Mot de passe'
+     }) }}
+      </br>
+     {{ form_row(registrationForm.agreeTerms , {
+     label: 'J\'accepte les conditions'
+     }) }}
+     </br>
+     <button type="submit" class="btn btn-lg btn-light">S'inscrire</button>
+ {{ form_end(registrationForm) }}
+	
+	
+	
+</div>
+	<!--================ LogIn end =================-->
 {% endblock %}
+
+{% block footer %}{% include 'home/_footer.html.twig' %}{% endblock %}

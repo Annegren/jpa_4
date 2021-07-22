@@ -5,9 +5,9 @@
 {% block body %}
 
 {% if products %}
-    <h1 class="mb-5">Les voyages disponible pour:
+    <h2 class="mb-5 text-center p-5">Les voyages disponibles pour:
       {{ products.0.category.name }} et moi
-    </h1>
+    </h2>
     {% for product in products %}
 
 <section class="container p-5 col-5">
@@ -16,7 +16,10 @@
   <div class="card-body">
     <h5 class="card-title">{{  product.title }}</h5>
     <p class="card-text">{{ product.description }}</p>
+
+        <div class="text-center">
         <a href="{{path("product_show", { id: product.id }) }}">En savoir plus</a>
+        </div>
   </div>
 </div>
 </section>

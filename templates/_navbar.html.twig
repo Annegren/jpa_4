@@ -1,21 +1,17 @@
 <nav class="navbar navbar-light bg-light">
   <div class="container-fluid">
      <ul class="nav-item active">
-   <a class="nav-link" href="/">Accueil</a>
+   <a class="nav-link" href="/" style="color:#603d21">Accueil</a>
  </ul>
   <ul class="nav-item">
-   <a class="nav-link" href="/concept/">Le concept</a>
+   <a class="nav-link" href="/concept/" style="color:#603d21">Le concept</a>
  </ul>
  </li>
  <ul class="nav-item">
- 
- 
-
-
-   <a class="nav-link" href="/categories/">Je pars avec</a>
+   <a class="nav-link" href="/categories/" style="color:#603d21">Je pars avec...</a>
  </ul>
   <ul class="nav-item">
-  <a class="nav-link" href="/contact/">Contactez nous</a>
+  <a class="nav-link" href="/contact/" style="color:#603d21">Contactez nous</a>
 </ul>
 
 {% if app.user %}
@@ -27,7 +23,7 @@
 {% else %}
 	<a href="{{ path('app_login') }}">
 		Se connecter</a>
-	<a class="nav-link" href="{{ path('app_register') }}">Créer un compte</a>
+	<a class="nav-link" href="{{ path('app_register') }}" style="color:#603d21">Créer un compte</a>
 {% endif %}
     </form>
   </div>
